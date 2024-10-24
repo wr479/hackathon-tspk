@@ -1,0 +1,14 @@
+footer {
+    @include df_ac_jcc;
+    flex-direction: column;
+    gap: 2.125rem;
+    padding-block: 20.438rem 7.188rem;
+    .img-container {
+        display: flex;
+        align-items: center;
+        gap: 2.938rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+}

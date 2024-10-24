@@ -1,0 +1,302 @@
+.text_candy {
+    position: absolute;
+    left: 11.375rem;
+    top: 1.75rem;
+    color: $white;
+    font-size: 11.25rem;
+    @include mobile {
+        font-size: 10.833rem;
+        top: 1.333rem;
+        left: 4.083rem;
+    }
+    @include mobile_small {
+        font-size: 5.333rem;
+        top: 1rem;
+        left: 0.667rem;
+    }
+}
+
+.text_queen {
+    position: absolute;
+    top: 12.5rem;
+    left: 43.125rem;
+    color: $white;
+    font-size: 11.25rem;
+    @include mobile {
+        font-size: 11.088rem;
+        left: 28.667rem;
+        top: 10.333rem;
+    }
+    @include mobile_small {
+        font-size: 5.333rem;
+        top: 5.833rem;
+        left: 12.583rem;
+    }
+}
+
+.top_svg {
+    position: absolute;
+    width: 62.438rem;
+    height: 41.938rem;
+    left: 37.25rem;
+    top: 0;
+    z-index: -2;
+    @include mobile {
+        width: 58.583rem;
+        height: 30.333rem;
+        top: 1rem;
+        left: 0rem;
+    }
+    @include mobile_small {
+        width: 25.375rem;
+        height: 14.708rem;
+        top: 0.583rem;
+        left: -1rem;
+    }
+}
+
+.bottom_svg {
+    position: absolute;
+    width: 14.938rem;
+    height: 18.5rem;
+    right: 29.656rem;
+    top: 41.125rem;
+    z-index: -2;
+    @include mobile {
+        display: none;
+    }
+}
+
+.bottom_svg_mobile {
+    display: none;
+    position: absolute;
+    width: 8.833rem;
+    height: 7.25rem;
+    left: 41.667rem;
+    top: 50.417rem;
+    z-index: -2;
+    @include mobile {
+        display: flex;
+    }
+}
+
+.card_inst {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3.063rem;
+    right: 3.063rem;
+    top: 9.875rem;
+    width: 32.75rem;
+    padding: 0.688rem 0 0.563rem 1.063rem;
+    background-color: $card_bg;
+    border-radius: 2.625rem;
+    @include mobile {
+        font-size: 3rem;
+        padding: 0.417rem 0.833rem;
+        gap: 2.333rem;
+        width: 27.917rem;
+        left: 4.083rem;
+        top: 22.083rem;
+    }
+    @include mobile_small {
+        padding-top: 0;
+        width: 12.333rem;
+        height: 3.173rem;
+        left: 0.667rem;
+        top: 12.667rem;
+        gap: .75rem;
+    }
+    svg {
+        width: 5.188rem;
+        height: 5.188rem;
+        @include mobile_small {
+            width: 2.083rem;
+            height: 2.083rem;
+        }
+    }
+    p {
+        padding-top: .75rem;
+        font-family: 'jsMath-cmbx10', sans-serif;
+        font-size: 3.25rem;
+        @include mobile {
+            font-size: 2.917rem;
+        }
+        @include mobile_small {
+            padding-top: 0;
+            font-size: 1.333rem;
+        }
+    }
+}
+
+.card_only {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    right: 3.063rem;
+    top: 18.688rem;
+    width: 32.75rem;
+    padding: 0.688rem 0 0.563rem 1.063rem;
+    background-color: $card_bg;
+    border-radius: 2.625rem;
+    @include mobile {
+        padding: 0 0 0 0.833rem;
+        display: flex;
+        align-items: center;
+        gap: 1.583rem;
+        width: 27.917rem;
+        left: 4.083rem;
+        top: 29.583rem;
+    }
+    @include mobile_small {
+        width: 12.333rem;
+        height: 3.173rem;
+        left: 0.667rem;
+        top: 16.833rem;
+        gap: 0.383rem;
+    }
+    svg {
+        width: 6rem;
+        height: 5.438rem;
+        @include mobile {
+            width: 5.333rem;
+            height: 5.333rem;
+        }
+        @include mobile_small {
+            width: 2.417rem;
+            height: 2.417rem;
+        }
+    }
+    p {
+        padding-top: .75rem;
+        font-family: 'jsMath-cmbx10', sans-serif;
+        font-size: 3.25rem;
+        @include mobile {
+            font-size: 2.917rem;
+        }
+        @include mobile_small {
+            padding-top: 0;
+            font-size: 1.333rem;
+        }
+    }
+}
+
+.mobile {
+    display: none;
+    @include mobile {
+        display: flex;
+    }
+}
+
+.desktop {
+    display: flex;
+    @include mobile {
+        display: none;
+    }
+}
+
+.mobile_small {
+    display: none;
+    @include mobile_small {
+        display: flex;
+        position: absolute;
+        width: 5.75rem;
+        height: 4rem;
+        left: 17.333rem;
+        top: 27.625rem;
+    }
+}
+
+.container_img {
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.big_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 3.125rem;
+    width: 34.594rem;
+    height: 46.125rem;
+    top: 18.063rem;
+    left: 4rem;
+    @include mobile {
+        width: 27.923rem;
+        height: 41.333rem;
+        top: 38.167rem;
+    }
+    @include mobile_small {
+        width: 12.667rem;
+        height: 18.75rem;
+        top: 21.833rem;
+        left: 0.667rem;
+    }
+}
+
+.med_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 29.53rem;
+    height: 37.916rem;
+    border-radius: 3.125rem;
+    top: 25.741rem;
+    left: 47rem;
+    @include mobile {
+        width: 22.489rem;
+        height: 23.833rem;
+        top: 27.667rem;
+        left: 36.083rem;
+    }
+    @include mobile_small {
+        border-radius: 1.25rem;
+        width: 11.667rem;
+        height: 12.667rem;
+        top: 14.917rem;
+        left: 14.333rem;
+    }
+}
+
+.small_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25.547rem;
+    height: 34.088rem;
+    top: 30.125rem;
+    left: 85.25rem;
+    border-radius: 3.125rem;
+    @include mobile {
+        width: 22.489rem;
+        height: 23.833rem;
+        left: 36.083rem;
+        top: 53.5rem;
+    }
+    @include mobile_small {
+        border-radius: 1.25rem;
+        width: 11.667rem;
+        height: 12.667rem;
+        top: 31.667rem;
+        left: 14.333rem;
+    }
+}
+
+.bottom_svg_mobile_small {
+    display: none;
+    position: absolute;
+    width: 17.333rem;
+    height: 6.042rem;
+    top: 39.583rem;
+    left: 1.25rem;
+    z-index: -2;
+    @include mobile_small {
+        display: flex;
+    }
+}

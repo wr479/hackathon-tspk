@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=""/>
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../src/styles/libraries/swiper.min.css"/>
+</head>
+
+<body>
+    
+    <header>
+        <svg width="114" height="26" viewBox="0 0 114 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 25.8251H25.65V0.175049H0V25.8251ZM20.713 10.532H15.293V5.11205H20.713V10.532ZM4.936 5.11205H10.359V15.468H20.713V20.8881H4.936V5.11205ZM42.353 0.175049C39.8164 0.175049 37.3368 0.927229 35.2278 2.33646C33.1187 3.74569 31.4749 5.74868 30.5042 8.09215C29.5335 10.4356 29.2796 13.0142 29.7744 15.502C30.2693 17.9898 31.4907 20.275 33.2843 22.0686C35.0779 23.8623 37.3631 25.0837 39.8509 25.5786C42.3388 26.0735 44.9174 25.8195 47.2609 24.8489C49.6044 23.8782 51.6073 22.2344 53.0166 20.1252C54.4258 18.0161 55.178 15.5365 55.178 13C55.174 9.59985 53.8215 6.34009 51.4172 3.9358C49.0129 1.5315 45.7532 0.179019 42.353 0.175049ZM42.353 20.8881C40.7929 20.8881 39.2678 20.4254 37.9706 19.5586C36.6735 18.6919 35.6624 17.46 35.0654 16.0186C34.4684 14.5773 34.3122 12.9913 34.6165 11.4611C34.9209 9.93105 35.6722 8.52555 36.7753 7.42239C37.8785 6.31924 39.284 5.56798 40.8141 5.26362C42.3442 4.95926 43.9302 5.11547 45.3716 5.71249C46.8129 6.30951 48.0449 7.32054 48.9116 8.61775C49.7784 9.91485 50.241 11.4399 50.241 13C50.2378 15.0911 49.4057 17.0956 47.9271 18.5742C46.4485 20.0528 44.444 20.8848 42.353 20.8881ZM101.072 0.175049C98.535 0.174859 96.0557 0.926859 93.9465 2.33597C91.8373 3.74508 90.1934 5.748 89.2225 8.09145C88.2517 10.4348 87.9975 13.0136 88.4923 15.5014C88.987 17.9893 90.2084 20.2747 92.002 22.0683C93.7955 23.862 96.0807 25.0837 98.569 25.5786C101.056 26.0735 103.635 25.8195 105.979 24.8489C108.322 23.8783 110.325 22.2344 111.734 20.1253C113.144 18.0162 113.896 15.5366 113.896 13C113.892 9.60005 112.54 6.34041 110.136 3.93615C107.732 1.53188 104.472 0.179289 101.072 0.175049ZM101.072 20.8881C99.512 20.8883 97.987 20.4257 96.6894 19.5591C95.3921 18.6925 94.3809 17.4606 93.7837 16.0193C93.1865 14.578 93.0302 12.9919 93.3344 11.4617C93.6387 9.93165 94.3899 8.52605 95.493 7.42275C96.5961 6.31949 98.002 5.56813 99.532 5.26369C101.062 4.95925 102.648 5.1154 104.089 5.7124C105.531 6.30939 106.763 7.32041 107.63 8.61765C108.496 9.91485 108.959 11.4399 108.959 13C108.956 15.0909 108.124 17.0952 106.645 18.5738C105.167 20.0524 103.163 20.8846 101.072 20.8881ZM71.712 0.175049C69.1754 0.175049 66.6958 0.927229 64.5868 2.33646C62.4777 3.74569 60.8339 5.74868 59.8632 8.09215C58.8925 10.4356 58.6386 13.0142 59.1334 15.502C59.6283 17.9898 60.8497 20.275 62.6433 22.0686C64.4369 23.8623 66.7221 25.0837 69.2099 25.5786C71.6977 26.0735 74.2764 25.8195 76.6199 24.8489C78.9634 23.8782 80.9663 22.2344 82.3756 20.1252C83.7848 18.0161 84.537 15.5365 84.537 13C84.533 9.59985 83.1805 6.34009 80.7762 3.9358C78.3719 1.5315 75.1122 0.179019 71.712 0.175049ZM71.712 20.8881C70.2584 20.8888 68.833 20.4879 67.5929 19.7295C66.3529 18.9712 65.3464 17.8852 64.6847 16.591C64.0231 15.2968 63.7318 13.8448 63.8432 12.3956C63.9546 10.9463 64.4642 9.55605 65.3159 8.37815C66.1676 7.20031 67.3282 6.28066 68.6695 5.72076C70.0109 5.16085 71.4809 4.98247 72.9172 5.20529C74.3536 5.42812 75.7004 6.04348 76.8091 6.98347C77.9178 7.92345 78.7452 9.15155 79.2 10.532H71.712V15.468H79.2C78.6791 17.0433 77.6755 18.4148 76.3314 19.3876C74.9874 20.3605 73.3712 20.8853 71.712 20.8881Z" fill="black"/>
+        </svg>
+        <hr>
+        <p>О нас</p>
+        <hr>
+        <p>аналитика</p>
+        <hr>
+        <p>отчетность</p>
+        <hr>
+        <p>профиль</p>
+    </header>
+    
+    <div class="header-top"></div>
+
+    <section class="hero-section">
+        <div class="text-container">
+            <h1>HR Analytics</h1>
+            <p>Взгляните на ваши данные по-новому, превратите их в ценные инсайты и достигайте целей HR с нашей помощью.</p>
+        </div>
+        <button>
+            Войти
+        </button>
+        <div class="left-stroke"></div>
+        <div class="right-stroke"></div>
+        <div class="absolute-img left-0">
+            <img src="../src/assets/img/index/left-img-hero.png" alt="">
+        </div>
+        <div class="absolute-img right-0 js-end">
+            <img src="../src/assets/img/index/right-hero-img.png" alt="">
+        </div>
+    </section>
+
+    <div class="two-stroke">
+        <hr>
+        <hr>
+    </div>
+    <section class="company-section">
+        <p>Лучшие компании выбирают HR Analytics</p>
+        <div class="container-imgs">
+            <img src="../src/assets/img/index/company/img1.png" alt="">
+            <img src="../src/assets/img/index/company/img2.png" alt="">
+            <img src="../src/assets/img/index/company/img3.png" alt="">
+            <img src="../src/assets/img/index/company/img4.png" alt="">
+            <img src="../src/assets/img/index/company/img5.png" alt="">
+        </div>
+    </section>
+
+    <div class="two-stroke">
+        <hr>
+        <hr>
+    </div>
+
+    <div class="performance-worker-section">
+        <div class="text-container">
+            <h2>Получать точные данные о производительности сотрудников:</h2>
+            <p>
+                Получайте точные данные о производительности сотрудников: 
+                <br>
+                <br>
+                Сбор информации о рабочем времени, задачах, достижениях и результатах станет автоматическим, избавит от ручного ввода. 
+                <br>
+                <br>
+                Всегда будет известно, насколько эффективно работает каждый сотрудник, что позволит оптимизировать  работу и мотивировать команду.
+                <br>
+                <br>
+                Точные данные помогут избежать субъективных оценок и создать справедливую систему вознаграждения.
+            </p>
+        </div>
+        <div class="text-container gap150">
+            <h2 class="text-end">Отслеживать ключевые показатели HR:</h2>
+            <p class="text-left">
+                Отслеживать ключевые показатели HR:
+                <br>
+                <br>
+                Получайте информацию о потенциальных проблемах в HR-отделе, чтобы вовремя реагировать и удерживать ценных сотрудников.
+                <br>
+                <br>
+                Оценивайте эффективность программ профессионального развития и корректируйте их в соответствии с потребностями сотрудников.
+                <br>
+                <br>
+                Понимайте, как сотрудники относятся к компании и к своей работе, чтобы создавать более комфортную рабочую среду.
+            </p>
+        </div>
+        <img class="text-img-first" src="../src/assets/img/index/index-text-first.png" alt="">
+        <img class="text-img-second" src="../src/assets/img/index/index-text-two.png" alt="">
+    </div>
+
+    <div class="two-stroke">
+        <hr>
+        <hr>
+    </div>
+
+    <div class="graphic-section">
+        <div class="graphic-container-vertical">
+            <div class="graphic-container">
+                <div class="graphic">
+                    
+                    <svg class="top-yellow" width="283" height="172" viewBox="0 0 283 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_94_446)">
+                        <path d="M282.21 41.2031C240.053 15.6573 191.946 1.58691 142.667 0.38972C93.389 -0.807525 44.6551 10.9102 1.30736 34.3786L73.9234 168.505C93.8676 157.707 116.29 152.316 138.963 152.867C161.636 153.418 183.77 159.891 203.166 171.645L282.21 41.2031Z" fill="url(#paint0_linear_94_446)" shape-rendering="crispEdges"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_94_446" x="0.307129" y="0.306152" width="281.903" height="171.339" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.46 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_94_446"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_94_446" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_446" x1="-33.9294" y1="452.771" x2="323.41" y2="73.0273" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EBB800" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#FFFD8B" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                
+                    <p class="top-yellow__text">11,7%</p>
+                    
+                    <svg class="left-bottom" width="566" height="566" viewBox="0 0 566 566" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_i_94_444)">
+                        <path d="M565.458 282.958C565.458 438.978 438.978 565.458 282.958 565.458C126.938 565.458 0.458008 438.978 0.458008 282.958C0.458008 126.937 126.938 0.45752 282.958 0.45752C438.978 0.45752 565.458 126.937 565.458 282.958ZM152.98 282.958C152.98 354.742 211.173 412.935 282.958 412.935C354.743 412.935 412.936 354.742 412.936 282.958C412.936 211.173 354.743 152.98 282.958 152.98C211.173 152.98 152.98 211.173 152.98 282.958Z" fill="url(#paint0_linear_94_444)"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_i_94_444" x="0.458008" y="-0.54248" width="567" height="566" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_innerShadow_94_444"/>
+                        <feOffset dx="2" dy="-1"/>
+                        <feGaussianBlur stdDeviation="2.75"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_94_444"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_444" x1="65.958" y1="179.958" x2="543.458" y2="389.458" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF4C4C" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#E8B94D" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+    
+                    <p class="left-bottom__text">51,3%</p>
+    
+                    <svg class="right-bottom" width="255" height="524" viewBox="0 0 255 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_94_445)">
+                        <path d="M65.1826 514.272C114.166 495.098 156.824 462.628 188.35 420.519C219.877 378.411 239.02 328.336 243.625 275.935C248.229 223.534 238.111 170.888 214.411 123.927C190.711 76.966 154.369 37.5547 109.48 10.1322L29.968 140.289C50.6216 152.906 67.3422 171.039 78.2467 192.646C89.1512 214.253 93.8064 238.475 91.688 262.585C89.5695 286.695 80.7616 309.734 66.2563 329.108C51.7509 348.482 32.1243 363.421 9.58697 372.243L65.1826 514.272Z" fill="url(#paint0_linear_94_445)" shape-rendering="crispEdges"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_94_445" x="0.0869141" y="0.632324" width="254.122" height="523.14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset/>
+                        <feGaussianBlur stdDeviation="4.75"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_94_445"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_94_445" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_445" x1="21.3502" y1="18.3984" x2="-91.9635" y2="527.374" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF146A" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#FF3539" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+    
+                    <p class="right-bottom__text">39,6%</p>
+    
+                </div>
+                
+                <div class="text-container">
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#FF4C4C"/>
+                        </svg>
+                        <p>Middle</p>
+                    </div>
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#FF146A"/>
+                        </svg>
+                        <p>Junior</p>
+                    </div>
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#EDC73D"/>
+                        </svg>
+                        <p>Intern</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-container-form">
+                <h3>Соотношение грейдов</h3>
+                <p>Каждый грейд соответствует определённому уровню знаний и навыков. С нашей помощью вы сможете узнать соотношение грейдов в вашей команде.</p>
+                <button>Составить диаграмму</button>
+            </div>
+        </div>
+
+        <div class="graphic-container-vertical">
+            <div class="text-container-form">
+                <h3>Количество сотрудников в городах</h3>
+                <p>Узнавайте изменения в количестве сотрудников за определенный период (например, рост или снижение) и в каких филиалах</p>
+                <button>Составить диаграмму</button>
+            </div>
+
+            <div class="graphic-container">
+                
+                <div class="text-container">
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#FF4C4C"/>
+                        </svg>
+                        <p>Москва</p>
+                    </div>
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#FF146A"/>
+                        </svg>
+                        <p>Казань</p>
+                    </div>
+                    <div class="item">
+                        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 0L42 24L21 48L0 24L21 0Z" fill="#EDC73D"/>
+                        </svg>
+                        <p>Самара</p>
+                    </div>
+                </div>
+            
+                <div class="graphic">
+                    <svg class="top-yellow" width="283" height="172" viewBox="0 0 283 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_94_446)">
+                        <path d="M282.21 41.2031C240.053 15.6573 191.946 1.58691 142.667 0.38972C93.389 -0.807525 44.6551 10.9102 1.30736 34.3786L73.9234 168.505C93.8676 157.707 116.29 152.316 138.963 152.867C161.636 153.418 183.77 159.891 203.166 171.645L282.21 41.2031Z" fill="url(#paint0_linear_94_446)" shape-rendering="crispEdges"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_94_446" x="0.307129" y="0.306152" width="281.903" height="171.339" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="-1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.46 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_94_446"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_94_446" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_446" x1="-33.9294" y1="452.771" x2="323.41" y2="73.0273" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EBB800" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#FFFD8B" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                
+                    <p class="top-yellow__text left-pr">60 чел.</p>
+                    
+                    <svg class="left-bottom" width="566" height="566" viewBox="0 0 566 566" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_i_94_444)">
+                        <path d="M565.458 282.958C565.458 438.978 438.978 565.458 282.958 565.458C126.938 565.458 0.458008 438.978 0.458008 282.958C0.458008 126.937 126.938 0.45752 282.958 0.45752C438.978 0.45752 565.458 126.937 565.458 282.958ZM152.98 282.958C152.98 354.742 211.173 412.935 282.958 412.935C354.743 412.935 412.936 354.742 412.936 282.958C412.936 211.173 354.743 152.98 282.958 152.98C211.173 152.98 152.98 211.173 152.98 282.958Z" fill="url(#paint0_linear_94_444)"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_i_94_444" x="0.458008" y="-0.54248" width="567" height="566" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect1_innerShadow_94_444"/>
+                        <feOffset dx="2" dy="-1"/>
+                        <feGaussianBlur stdDeviation="2.75"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_94_444"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_444" x1="65.958" y1="179.958" x2="543.458" y2="389.458" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF4C4C" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#E8B94D" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+    
+                    <p class="left-bottom__text left-pr">193 чел.</p>
+    
+                    <svg class="right-bottom" width="255" height="524" viewBox="0 0 255 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_94_445)">
+                        <path d="M65.1826 514.272C114.166 495.098 156.824 462.628 188.35 420.519C219.877 378.411 239.02 328.336 243.625 275.935C248.229 223.534 238.111 170.888 214.411 123.927C190.711 76.966 154.369 37.5547 109.48 10.1322L29.968 140.289C50.6216 152.906 67.3422 171.039 78.2467 192.646C89.1512 214.253 93.8064 238.475 91.688 262.585C89.5695 286.695 80.7616 309.734 66.2563 329.108C51.7509 348.482 32.1243 363.421 9.58697 372.243L65.1826 514.272Z" fill="url(#paint0_linear_94_445)" shape-rendering="crispEdges"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_94_445" x="0.0869141" y="0.632324" width="254.122" height="523.14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset/>
+                        <feGaussianBlur stdDeviation="4.75"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_94_445"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_94_445" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_94_445" x1="21.3502" y1="18.3984" x2="-91.9635" y2="527.374" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF146A" stop-opacity="0.84"/>
+                        <stop offset="1" stop-color="#FF3539" stop-opacity="0.88"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+    
+                    <p class="right-bottom__text left-pr">181 чел.</p>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="two-stroke">
+        <hr>
+        <hr>
+    </div>
+
+
+    <footer>
+        <div class="img-container">
+            <svg width="238" height="54" viewBox="0 0 238 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 54H53.5989V7.57791e-08H0V54ZM43.2824 21.8042H31.9567V10.3937H43.2824V21.8042ZM10.3144 10.3937H21.6465V32.1958H43.2824V43.6063H10.3144V10.3937ZM88.5019 7.57791e-08C83.2014 7.57791e-08 78.02 1.58354 73.6129 4.55033C69.2057 7.51713 65.7708 11.734 63.7424 16.6676C61.714 21.6012 61.1834 27.0299 62.2174 32.2673C63.2515 37.5048 65.8038 42.3158 69.5518 46.0918C73.2997 49.868 78.0749 52.4393 83.2735 53.4812C88.4723 54.5229 93.8606 53.9884 98.7576 51.9448C103.655 49.9012 107.84 46.4406 110.785 42.0004C113.73 37.5602 115.301 32.34 115.301 27C115.293 19.8417 112.467 12.979 107.443 7.91736C102.419 2.85568 95.6071 0.00835797 88.5019 7.57791e-08ZM88.5019 43.6063C85.2419 43.6063 82.055 42.6324 79.3444 40.8076C76.6339 38.9829 74.5211 36.3895 73.2736 33.3549C72.0261 30.3206 71.6997 26.9817 72.3355 23.7602C72.9716 20.5389 74.5416 17.58 76.8466 15.2575C79.1519 12.9351 82.0889 11.3535 85.2862 10.7128C88.4836 10.072 91.7977 10.4009 94.8097 11.6578C97.8214 12.9146 100.396 15.0431 102.207 17.7741C104.018 20.5048 104.985 23.7156 104.985 27C104.978 31.4023 103.239 35.6223 100.15 38.7351C97.06 41.848 92.8713 43.5996 88.5019 43.6063ZM211.203 7.57791e-08C205.901 -0.000399924 200.72 1.58276 196.313 4.5493C191.906 7.51585 188.47 11.7325 186.442 16.6661C184.413 21.5996 183.882 27.0286 184.916 32.2661C185.95 37.5038 188.502 42.3149 192.25 46.0911C195.997 49.8673 200.773 52.4391 205.972 53.481C211.169 54.5229 216.558 53.9884 221.456 51.945C226.352 49.9014 230.538 46.4408 233.482 42.0006C236.429 37.5604 238 32.3402 238 27C237.992 19.8421 235.166 12.9797 230.143 7.9181C225.12 2.85648 218.307 0.00892639 211.203 7.57791e-08ZM211.203 43.6063C207.943 43.6067 204.756 42.633 202.045 40.8086C199.334 38.9842 197.221 36.3907 195.973 33.3564C194.725 30.3221 194.398 26.9829 195.034 23.7615C195.67 20.5402 197.24 17.581 199.545 15.2583C201.85 12.9357 204.787 11.3538 207.985 10.7129C211.182 10.072 214.496 10.4007 217.507 11.6576C220.52 12.9144 223.095 15.0429 224.906 17.7739C226.716 20.5048 227.684 23.7156 227.684 27C227.677 31.4019 225.939 35.6215 222.848 38.7343C219.76 41.8471 215.572 43.5991 211.203 43.6063ZM149.851 7.57791e-08C144.551 7.57791e-08 139.369 1.58354 134.962 4.55033C130.555 7.51713 127.12 11.734 125.092 16.6676C123.063 21.6012 122.533 27.0299 123.567 32.2673C124.601 37.5048 127.153 42.3158 130.901 46.0918C134.649 49.868 139.424 52.4393 144.623 53.4812C149.821 54.5229 155.21 53.9884 160.107 51.9448C165.004 49.9012 169.189 46.4406 172.134 42.0004C175.079 37.5602 176.651 32.34 176.651 27C176.642 19.8417 173.816 12.979 168.792 7.91736C163.768 2.85568 156.956 0.00835797 149.851 7.57791e-08ZM149.851 43.6063C146.814 43.6078 143.835 42.7638 141.244 41.1673C138.653 39.5709 136.55 37.2844 135.167 34.5598C133.784 31.8351 133.176 28.7785 133.408 25.7276C133.641 22.6764 134.706 19.7495 136.486 17.2697C138.266 14.79 140.691 12.8539 143.494 11.6752C146.297 10.4964 149.368 10.1209 152.37 10.59C155.371 11.0591 158.186 12.3546 160.502 14.3335C162.819 16.3124 164.548 18.8979 165.498 21.8042H149.851V32.1958H165.498C164.41 35.5122 162.313 38.3993 159.504 40.4473C156.696 42.4956 153.318 43.6006 149.851 43.6063Z" fill="black"/>
+            </svg>
+            <img src="../src/assets/img/index/google.png" alt="">
+            <img src="../src/assets/img/index/appStore.png" alt="">
+        </div>
+        <p>Copyright © 2024 HR Analytics, Inc. Все права защищены.</p>
+    </footer>    
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="../src/scripts/libraries/swiper.min.js"></script>
+<script type="module" src="../src/scripts/app.js"></script>
+</html>

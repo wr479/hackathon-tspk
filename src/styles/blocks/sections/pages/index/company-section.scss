@@ -1,0 +1,49 @@
+.two-stroke {
+    width: 100%;
+    padding-inline: 3.5rem;
+    display: flex;
+    gap: 6.125rem;
+    hr {
+        border: none;
+        width: 52.313rem;
+        height: 0.063rem;
+        background-color: #FF0000;
+    }
+}
+
+.company-section {
+    @include df_fdc;
+    justify-content: center;
+    align-items: center;
+    gap: 4.25rem;
+    padding-block: 6.125rem 6.313rem;
+    p {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+    .container-imgs {
+        display: flex;
+        gap: 9.75rem;
+        padding-inline: 3.625rem;
+        .firts {
+            width: 24.688rem;
+            height: 4.459rem;
+        }
+        .second {
+            width: 8.625rem;
+            height: 4.264rem;
+        }
+        .third {
+            width: 8.25rem;
+            height: 4.769rem;
+        }
+        .four {
+            width: 10.375rem;
+            height: 3.823rem;
+        }
+        .five {
+            width: 21.813rem;
+            height: 4.649rem;
+        }
+    }
+}

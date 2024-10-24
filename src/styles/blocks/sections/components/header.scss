@@ -1,0 +1,31 @@
+header {
+    @include df_jb_ac;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: white;
+    box-shadow: 0px -38px 124.9px 0px #FF2B2240;
+    hr {
+        border: none;
+        height: 2.25rem;
+        width: 0.063rem;
+        background-color: black;
+    }
+    p {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 1.875rem;
+        @include transition(all);
+        &:hover {
+            scale: 1.1;
+            @include transition(all);
+        }
+    }
+}
+
+.header-top {
+    height: 6.25rem;
+}

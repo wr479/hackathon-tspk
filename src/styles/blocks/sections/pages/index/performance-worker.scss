@@ -1,0 +1,51 @@
+.performance-worker-section {
+    @include df_fdc;
+    position: relative;
+    gap: 17.438rem;
+    padding-block: 12.375rem 22.438rem;
+    .text-container {
+        @include df_fdc;
+        gap: 6rem;
+        padding-inline: 3.188rem;
+        h2 {
+            @include poppins;
+            font-size: 4rem;
+            font-weight: 400;
+        }
+        p {
+            margin-left: auto;
+            @include poppins;
+            text-align: center;
+            font-size: 2.125rem;
+            width: 63.5rem;
+        }
+    }
+    .text-img-first {
+        position: absolute;
+        top: 27.688rem;
+        left: -5.75rem;
+        width: 63.063rem;
+        height: 47.313rem;
+    }
+    .text-img-second {
+        position: absolute;
+        top: 98.313rem;
+        right: 5.875rem;
+        width: 47.563rem;
+        height: 47.563rem;
+    }
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-left {
+    text-align: end;
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+
+.gap150 {
+    gap: 9.375rem !important;
+}

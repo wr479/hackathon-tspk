@@ -1,0 +1,68 @@
+.hero-section {
+    @include df_fdc_ac;
+    position: relative;
+    padding-block: 10.375rem 12.375rem;
+    width: 100%;
+    gap: 7.5rem;
+    .text-container {
+        @include df_ac_jcc;
+        flex-direction: column;
+        gap: 2.625rem;
+        h1 {
+            color: #FF0000;
+            font-weight: 400;
+            font-size: 8rem;
+        }
+        p {
+            width: 45.125rem;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2.25rem;
+        }
+    }
+    button {
+        width: 35.188rem;
+        height: 7.5rem;
+        background-color: #FF0000;
+        border-radius: 0.938rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .left-stroke {
+        position: absolute;
+        left: 23.5rem;
+        top: 14.375rem;
+        width: 14.5rem;
+        height: 12.063rem;
+        border-top: 0.188rem solid #FF0000;
+        border-left: 0.188rem solid #FF0000;
+        border-bottom: 0.188rem solid #FF0000;
+    }
+    .right-stroke {
+        position: absolute;
+        right: 23.5rem;
+        top: 14.375rem;
+        width: 14.5rem;
+        height: 12.063rem;
+        border-top: 0.188rem solid #FF0000;
+        border-right: 0.188rem solid #FF0000;
+        border-bottom: 0.188rem solid #FF0000;
+    }
+    .absolute-img {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 55.438rem;
+        height: 55.438rem;
+
+        position: absolute;
+        top: 9rem;
+        img {
+            height: 100%;
+        }
+    }
+    .js-end {
+        justify-content: end;
+    }
+}

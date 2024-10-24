@@ -1,0 +1,114 @@
+.graphic-section {
+    @include df_fdc;
+    gap: 12.5rem;
+    position: relative;
+    padding: 8.875rem 3.5rem 16.688rem;
+    .graphic-container-vertical {
+        display: flex;
+        gap: 2.125rem;
+        align-items: center;
+    }
+    .graphic-container {
+        @include df_ac;
+        gap: 5.313rem;
+        position: relative;
+        width: 64.563rem;
+        height: 38.813rem;
+        border: 0.625rem solid #F5F5F5;
+        border-radius: 0.625rem;
+        padding-left: 3.406rem;
+
+        .graphic {
+            position: relative;
+            width: 35.313rem;
+            height: 35.313rem;
+            .top-yellow {
+                position: absolute;
+                top: 0;
+                left: 9.1rem;
+                width: 17.69rem;
+                height: 10.775rem;
+                z-index: 20;
+                &__text {
+                    position: absolute;
+                    top: 3.063rem;
+                    left: 15rem;
+
+                    font-size: 2.5rem;
+
+                    z-index: 30;
+                }
+            }
+            .left-bottom {
+                width: 35.375rem;
+                height: 35.375rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &__text {
+                    position: absolute;
+                    left: 1.938rem;
+                    top: 16.594rem;
+
+                    font-size: 2.5rem;
+                }
+            }
+            .right-bottom {
+                position: absolute;
+                right: -0.75rem;
+                bottom: 0.6rem;
+                width: 15.938rem;
+                height: 32.75rem;
+                &__text {
+                    position: absolute;
+                    right: 1.031rem;
+                    top: 15.625rem;
+
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2.813rem;
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 1.625rem;
+                p {
+                    height: fit-content;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    .text-container-form {
+        @include df_fdc;
+        align-items: center;
+        gap: 2.813rem;
+        h3 {
+            font-size: 3rem;
+            text-align: center;
+        }
+        p {
+            width: 43.938rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        button {
+            width: 35.125rem;
+            height: 5.813rem;
+            border-radius: 0.563rem;
+            background-color: #FF3C3C;
+            color: #fff;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+    .left-pr {
+        font-size: 2rem !important;
+    }
+}
