@@ -14,7 +14,9 @@ header {
         width: 0.063rem;
         background-color: black;
     }
-    p {
+    a {
+        text-decoration: none;
+        color: #000;
         cursor: pointer;
         font-weight: 400;
         font-size: 1.875rem;

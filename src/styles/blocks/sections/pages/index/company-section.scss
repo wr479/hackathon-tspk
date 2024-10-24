@@ -1,5 +1,5 @@
 .two-stroke {
-    width: 100%;
+    width: 100% - 5% ;
     padding-inline: 3.5rem;
     display: flex;
     gap: 6.125rem;
@@ -20,6 +20,10 @@
     p {
         font-weight: 400;
         font-size: 2.5rem;
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
     }
     .container-imgs {
         display: flex;

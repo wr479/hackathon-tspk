@@ -242,6 +242,98 @@ button {
   padding: 0;
 }
 
+.modal-auth, .modal-register {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-auth .modal-content, .modal-register .modal-content {
+  position: relative;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  border: 1px solid #888;
+  width: 30%;
+  align-items: center;
+  gap: 5rem;
+}
+.modal-auth .modal-content .btn-modal-close, .modal-register .modal-content .btn-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.modal-auth .modal-content span, .modal-register .modal-content span {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 58.09px;
+  text-align: left;
+}
+.modal-auth .modal-content form, .modal-register .modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.modal-auth .modal-content form input, .modal-register .modal-content form input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #FF0004;
+  margin-bottom: 1rem;
+  width: 29.75rem;
+  height: 6rem;
+  border-radius: 9px;
+  border: 1px 0px 0px 0px;
+  opacity: 0.5px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 38.73px;
+  text-align: left;
+  background-color: rgba(255, 215, 216, 0.5);
+}
+.modal-auth .modal-content form button, .modal-register .modal-content form button {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #FF0008 0%, #FF0062 100%);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 58.09px;
+}
+.modal-auth .modal-content form .bottom, .modal-register .modal-content form .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-auth .modal-content form .bottom .in, .modal-register .modal-content form .bottom .in {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-auth .modal-content form .bottom .in span, .modal-register .modal-content form .bottom .in span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+}
+.modal-auth .modal-content form .bottom .in p, .modal-register .modal-content form .bottom .in p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+  color: rgb(0, 59, 221);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -261,13 +353,15 @@ header hr {
   width: 0.063rem;
   background-color: black;
 }
-header p {
+header a {
+  text-decoration: none;
+  color: #000;
   cursor: pointer;
   font-weight: 400;
   font-size: 1.875rem;
   transition: all 0.3s ease-out;
 }
-header p:hover {
+header a:hover {
   scale: 1.1;
   transition: all 0.3s ease-out;
 }
@@ -366,7 +460,7 @@ footer p {
 }
 
 .two-stroke {
-  width: 100%;
+  width: 95%;
   padding-inline: 3.5rem;
   display: flex;
   gap: 6.125rem;
@@ -389,6 +483,10 @@ footer p {
 .company-section p {
   font-weight: 400;
   font-size: 2.5rem;
+}
+.company-section img {
+  width: 100%;
+  object-fit: contain;
 }
 .company-section .container-imgs {
   display: flex;
